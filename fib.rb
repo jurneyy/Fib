@@ -1,11 +1,11 @@
-def fib(n)
+def recursive_fib (n)
 	if n == 0
 		return 0 
 	elsif n == 1
 		return 1
 	else 
-		return fib(n-1) + fib(n-2)
+		return recursive_fib(n-1) + recursive_fib(n-2)
 	end 
 end 
 
-puts fib(9)
+puts recursive_fib(9)
