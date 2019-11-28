@@ -4,19 +4,21 @@ def max(numbers)
 
 	numbers.each do |num|
 		if num > max
+			max = num
 	    if max > second
 	      second = max
 	    end
-	    max = num
-	    elsif num > second
-	      second = num
-		end 
+	  end
 	end
 		puts max
 		puts second
 end 
 
-puts max([1,10,88,32,42])  #88 #42
+max([1,10,88,32,42])  #88 #42
+
+
+
+
 
 
 
